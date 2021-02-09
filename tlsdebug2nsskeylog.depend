@@ -1,0 +1,51 @@
+# depslib dependency file v1.0
+1612331739 source:/home/user/Development/github/tlsdebug2nsskeylog/main.cpp
+	"Application.h"
+
+1612331838 /home/user/Development/github/tlsdebug2nsskeylog/include/Application.h
+	<boost/program_options.hpp>
+	<boost/filesystem/fstream.hpp>
+
+1612868289 source:/home/user/Development/github/tlsdebug2nsskeylog/src/TlsDebugData.cpp
+	"TlsDebugData.h"
+	<fstream>
+	<string>
+	<sstream>
+
+1612868230 /home/user/Development/github/tlsdebug2nsskeylog/include/TlsDebugData.h
+	<istream>
+	<regex>
+	"Session.h"
+	"SessionStore.h"
+
+1612867344 source:/home/user/Development/github/tlsdebug2nsskeylog/src/Application.cpp
+	<iostream>
+	<fstream>
+	<string>
+	"Application.h"
+	"TlsDebugData.h"
+	"SessionStore.h"
+	"NssLogFormat.h"
+
+1612827374 /home/user/Development/github/tlsdebug2nsskeylog/include/Session.h
+
+1612867584 source:/home/user/Development/github/tlsdebug2nsskeylog/src/NssLogFormat.cpp
+	<iostream>
+	<iomanip>
+	<iostream>
+	"NssLogFormat.h"
+
+1612867558 /home/user/Development/github/tlsdebug2nsskeylog/include/NssLogFormat.h
+	<iostream>
+	"Session.h"
+
+1612514455 source:/home/user/Development/github/tlsdebug2nsskeylog/src/Session.cpp
+	"Session.h"
+
+1612860639 source:/home/user/Development/github/tlsdebug2nsskeylog/src/SessionStore.cpp
+	"SessionStore.h"
+
+1612860649 /home/user/Development/github/tlsdebug2nsskeylog/include/SessionStore.h
+	<vector>
+	"Session.h"
+

@@ -56,7 +56,7 @@ int Application::exec()
 
     NssLogFormat output;
     ofstream ofs;
-    ofs.open(m_outputFilePath.string(), std::ofstream::out | std::ofstream::app);
+    ofs.open(m_outputFilePath.string(), std::ofstream::out);
 
     for (auto session : keyStore){
         output.writeSession(ofs, session);

@@ -534,7 +534,6 @@ qrc_*.cpp
 ui_*.h
 *.qmlc
 *.jsc
-Makefile*
 *build-*
 *.qm
 *.prl
@@ -1039,3 +1038,9 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
+# Autoconf
+aclocal.m4
+autom4te.cache/
+configure
+Makefile.in
+build/

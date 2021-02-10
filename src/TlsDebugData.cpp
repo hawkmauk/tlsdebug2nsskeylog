@@ -67,7 +67,8 @@ int TlsDebugData::readSessions(ifstream &ifs, SessionStore &keyset)
 void TlsDebugData::getHexData(ifstream &file, unsigned short* data, size_t length)
 {
     string line;
-    int index,lines = 0;
+    int index = 0,lines = 0;
+    smatch m;
 
     //determine the number of lines to process based on size
     lines = length / 16;
@@ -77,7 +78,7 @@ void TlsDebugData::getHexData(ifstream &file, unsigned short* data, size_t lengt
         {
             // get the next hex line
             getline(file,line);
-            if (regex_search(line,TlsDebugData::REGEX_HEXLINE) == false)
+            if (regex_search(line,m,TlsDebugData::REGEX_HEXLINE) == false)
             {
                 break;
             }
